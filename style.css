@@ -1,28 +1,28 @@
 html body{
     margin: 0;
     padding: 0;
+    height:100vh;
 }
 
 .container{
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 100vh;
+    grid-template-rows: 1fr 4fr;
 }
 .header{
     grid-column: 2 / 3;
-    border: solid 1px red;
-    height:20%;
-
+    grid-row: 1 / 2;
+    background:red;
 }
 .sidebar{
     grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    border: solid 1px blueviolet
-    
-
+    grid-row: 1 / 3;
+    background:  blueviolet;
 }
 .main{
     grid-column: 2 / 3;
-    border: solid 1px green
-
+    background:green;
+    grid-row: 2 / 3;
 }
+ 
