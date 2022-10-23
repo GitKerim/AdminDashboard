@@ -6,14 +6,19 @@ html body{
 .container{
     display: grid;
     grid-template-columns: 1fr 4fr;
+    grid-template-rows: 100vh;
 }
 .header{
     grid-column: 2 / 3;
     border: solid 1px red;
+    height:20%;
+
 }
 .sidebar{
     grid-column: 1 / 2;
+    grid-row: 1 / 2;
     border: solid 1px blueviolet
+    
 
 }
 .main{
