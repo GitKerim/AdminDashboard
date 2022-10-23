@@ -24,5 +24,15 @@ html body{
     grid-column: 2 / 3;
     background:green;
     grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
- 
+.projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap:15px;
+}
+.projects div{
+    height: 200px;
+    background-color: antiquewhite;
+}
